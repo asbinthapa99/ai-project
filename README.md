@@ -1,4 +1,4 @@
-This is a *lightweight, working* mock interview platform for COM668.
+
 
 **What it has**
 - Register / Login (SQLite)
