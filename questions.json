@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "text": "Explain the difference between an array and a linked list.",
+    "keywords": [
+      "contiguous",
+      "pointer",
+      "insertion",
+      "deletion",
+      "random access",
+      "sequential"
+    ],
+    "tips": "Mention memory layout (contiguous vs nodes/pointers), access time (O(1) vs O(n) and operations (insert/delete)."
+  },
+  {
+    "id": 2,
+    "text": "What is a RESTTful API and why is it useful?",
+    "keywords": [
+      "stateless",
+      "resources",
+      "HTTP",
+      "methods",
+      "GET",
+      "POST",
+      "JSON",
+      "URI"
+    ],
+    "tips": "Define statelessness, resource-based URIs, HTTP methods, and JSON payloads."
+  },
+  {
+    "id": 3,
+    "text": "Describe how a relational database enforces relationships between tables.",
+    "keywords": [
+      "foreign key",
+      "primary key",
+      "constraints",
+      "referential integrity",
+      "join"
+    ],
+    "tips": "Discuss primary/foreign keys."
+  },
+  {
+    "id": 4,
+    "text": "Outline the steps of an agile software development lifecycle you would follow.",
+    "keywords": [
+      "iterative",
+      "sprint",
+      "backlog",
+      "standup",
+      "retrospective",
+      "increment"
+    ],
+    "tips": "Touch on iterations/sprints, backlog, daily standups, reviews ."
+  },
+  {
+    "id": 5,
+    "text": "How would you secure user passwords in a web application?",
+    "keywords": [
+      "hash",
+      "salt",
+      "bcrypt",
+      "argon2",
+      "pepper",
+      "https",
+      "rate limiting"
+    ],
+    "tips": "Explain salted hashing (bcrypt/argon2) and , HTTPS, and basic auth-- hardening practices."
+  }
+]

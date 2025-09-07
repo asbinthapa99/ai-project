@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Results</h1>
+<p>Total Score: <span class="score">{{ total_score }}</span> / {{ max_score }}</p>
+<div class="card">
+  <h2>Feedback</h2>
+  <ul>
+    {% for item in detailed %}
+      <li>
+        <strong>Q{{ loop.index }}:</strong> Score {{ item.score }} — {{ item.message }}
+        <div><em>Tip:</em> {{ item.tip }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<a class="button" href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+{% endblock %}

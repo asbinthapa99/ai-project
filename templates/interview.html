@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1>Mock Interview</h1>
+<form method="post">
+  {% for q in questions %}
+    <div class="card">
+      <strong>Q{{ loop.index }}.</strong> {{ q['text'] }}
+      <textarea name="answer_{{ q['id'] }}" placeholder="Type your answer in this box.." required></textarea>
+    </div>
+  {% endfor %}
+  <input type="submit" value="Submit Now ✅  ">
+</form>
+{% endblock %}

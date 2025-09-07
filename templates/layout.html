@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COM668 Mock Interview</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      {% if g.user %}
+        <span>Signed in as <strong>{{ g.user['email'] }}</strong></span>
+        <a class="button" href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a class="button" href="{{ url_for('logout') }}">Logout</a>
+      {% else %}
+        <a class="button" href="{{ url_for('login') }}">Login</a>
+        <a class="button" href="{{ url_for('register') }}">Register</a>
+      {% endif %}
+    </nav>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="card">
+          {% for m in messages %}<div>{{ m }}</div>{% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+    <footer> Made by asbin </footer>
+  </div>
+</body>
+</html>
